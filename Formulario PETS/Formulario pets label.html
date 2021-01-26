@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mascotas felices</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Bienvenido a <EM>Mascotas felices</EM></h1>
+    <p style="text-align: center;" >Queremos darte una cálida bienvenida a <em>Mascotas felices</em>, el primer sitio que busca unificar los datos de nuestras mascotas <br>
+    con el fin de realizar un censo que permita regular y asistir con precisión a nuestros amigos. Para comenzar queremos <br>
+    pedirte que completes los siguientes datos: </p>
+
+    <form method="GET">
+        <label for="Nombre"> Nombre:</label>
+        <input type="text" id="Nombre" > <br> <br>
+        <label>Edad: <input type="number" > <br> <br> </label>
+       <label>Mail: <input type="email" ></label> <br> <br>
+       <label for="contra"> Contraseña : <input type= "password" id="contra" > <br> <br> </label> 
+       <p>A continuación te pedimos que elijas la opción mas adecuada:</p>
+
+           <label> Labrador
+              <input type="radio" name="Raza" value="Ladrador"> 
+           </label>
+           <label> Ovejero
+            <input type= "radio" name="Raza" value="Ovejero">
+           </label>
+           <label>Sin Raza
+               <input type= "radio" name="Raza" value="Sin raza">
+           </label>
+        
+
+        <label for="Vivienda">¿Dónde vivis?</label>
+         <select id="Vivienda" name="residencia">
+             <option value="Casa">Casa</option>
+             <option value="Depto">Departamento</option>
+         </select>
+<br>
+         
+<label>Observaciones <br><textarea name="Observaciones" id="" cols="30" rows="10"></textarea></label> <br>
+     <input type= "submit"><br> <br> 
+    </form>
+
+    <form>
+        <label> Seleccioná el sexo de tu mascota: <br>
+        <label>Macho<input type= "radio" value="Macho" name="Sexo"></label>
+        <label>Hembre <input type="radio" value="Hembra" name="Sexo"></label>
+    </label>
+<br>
+    <label for="Especie">Que animal tenés?</label>
+    <select name="Mi animal" id="Especie">Gato
+        <option value="Miau">Gato</option>
+        <option value="Guauo">Perro</option>
+        <Option value="Cjo">Conejo</Option>
+    </select>
+  <br>
+<label for="Condiciones">Acepa las condiciones de este acuerdo?</label>
+  <input id="Condiciones" type= "checkbox" name="Bases" value="Acepta">
+<br>    
+  <label for="expla">Contanos sobre tu mascota</label><br>
+  <textarea placeholder="Cabello, color, actitud" name="Contanos" id="expla" cols="40" rows="10"></textarea> <br>
+<input type="submit">
+    </form>
+</body>
+</html>
